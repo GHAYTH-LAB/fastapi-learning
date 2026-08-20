@@ -12,7 +12,7 @@ async def help(user:str,problem_case:int,phone_number:int):
     return {"name":user
             ,"phone_number":phone_number
             ,"problem":problem_case}
-@app.post("/")
+@app.get("/")
 def add_user(user_name:str,user_id:int):
     return {"name":user_name
             ,"user_id":user_id}
