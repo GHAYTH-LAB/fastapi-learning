@@ -16,7 +16,7 @@ async def help(user:str,problem_case:int,phone_number:int):
 def add_user(user_name:str,user_id:int):
     return {"name":user_name
             ,"user_id":user_id}
-@app.get("/to do{todo_id}")
+@app.get("/to do/{todo_id}")
 def get_user(todo_id:int):
     for user in database:
         if user["user_id"]==todo_id:
